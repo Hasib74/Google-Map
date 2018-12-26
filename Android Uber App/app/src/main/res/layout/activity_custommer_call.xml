@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustommerCall">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--<de.hdodenhof.circleimageview.CircleImageView
+
+            android:layout_gravity="center"
+            android:src="@drawable/map_point"
+            android:layout_width="130dp"
+            android:layout_height="130dp" />-->
+        <TextView
+            android:id="@+id/txtTime"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/txtDistance"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/txtDaddress"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            />
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnAccept"
+                android:text="ACCEPT"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"></Button>
+            <Button
+                android:id="@+id/btnCancel"
+                android:text="DECLINE"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"></Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

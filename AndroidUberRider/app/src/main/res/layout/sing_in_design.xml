@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:text="hasib"
+            android:textColor="@android:color/black"
+            android:textCursorDrawable="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:id="@+id/edt_email"
+            android:hint="Eenter Your Email.."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:text="hasib"
+            android:textColor="@android:color/black"
+
+            android:textCursorDrawable="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:id="@+id/edt_password"
+            android:hint="Eenter Your Password.."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

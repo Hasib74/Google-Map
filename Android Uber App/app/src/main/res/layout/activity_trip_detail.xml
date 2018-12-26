@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".TripDetail">
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:id="@+id/current_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WEDNESDAY 22/11"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:textColor="@android:color/holo_blue_light"
+            android:textStyle="bold"
+            android:textSize="70sp"
+            android:id="@+id/money_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$30"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_marginLeft="11dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TRIP EARNING"
+            ></TextView>
+
+        <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               >
+               <TextView
+                   android:id="@+id/base_fire"
+                   android:layout_alignParentLeft="true"
+                   android:layout_marginLeft="11dp"
+                   android:textStyle="bold"
+                   android:textSize="25dp"
+                   android:text="BASE FARE"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+               <TextView
+                   android:id="@+id/base_fare_rate"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="11dp"
+                   android:textStyle="bold"
+                   android:textSize="25dp"
+                   android:text="$2.55"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+
+           </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="11dp"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:text="TIME"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/time"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="11dp"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:text="3 min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="11dp"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:text="DISTANCE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/distance"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="11dp"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:text="10 km"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:textColor="@android:color/black"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="11dp"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:text="ESTIMATED PAYOUT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="@android:color/black"
+                android:id="@+id/estimated_payout"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="11dp"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:text="$10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/f"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="11dp"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:text="Form :  "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+
+                android:id="@+id/form"
+                android:textSize="25dp"
+                android:layout_toEndOf="@+id/f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/t"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="11dp"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:text="To      :  "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+
+                android:id="@+id/to"
+                android:textSize="25dp"
+                android:layout_toEndOf="@+id/t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".TripDetail" />
+
+
+</LinearLayout>
